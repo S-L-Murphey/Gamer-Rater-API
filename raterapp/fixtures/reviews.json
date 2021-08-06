@@ -1,0 +1,23 @@
+
+[
+    {
+        "model": "raterapp.review",
+        "pk": 1,
+        "fields": {
+            "review": "I'll start by saying that this game is fun and a really good one. However, for the price that I paid for this game the way that it came produced (or should I say NOT produced) was a huge letdown. Most strategy games that I have played look good, are packaged well, and are produced well from the game box, to player pieces, to game board. Terraforming Mars, however, was not made this way.",
+            "game_id": 2,
+            "player_id": 1,
+            "rating": 1
+        }
+    },
+    {
+        "model": "raterapp.review",
+        "pk": 2,
+        "fields": {
+            "review": "With the expansion pack, choose from 7 different factions, and 7 different game boards to set forth on your quest of glory! Boost your defenses, conquer your surrounding land, and take no prisoners from your enemies!",
+            "game_id": 2,
+            "player_id": 1,
+            "rating": 5
+        }
+    }
+]

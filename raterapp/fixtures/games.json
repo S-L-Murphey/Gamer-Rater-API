@@ -1,0 +1,32 @@
+[
+    {
+        "model": "raterapp.game",
+        "pk": 1,
+        "fields": {
+            "title": "Scythe",
+            "description": "It is a time of unrest in 1920s Europa. The ashes from the first great war still darken the snow. The capitalistic city-state known simply as “The Factory”, which fueled the war with heavily armored mechs, has closed its doors, drawing the attention of several nearby countries. Lead your faction to victory, building mechs, working the land, and exploring the mysterious factory, all while protecting your territory from the mechs of other encroaching factions.",
+            "creator": "Stonemaier Games",
+            "year_released": "2016-08-10",
+            "number_of_players": 5,
+            "duration": 120,
+            "age_rec": 14,
+            "categories": [1],
+            "user_id": 1
+        }
+    },
+    {
+        "model": "raterapp.game",
+        "pk": 2,
+        "fields": {
+            "title": "Terraforming Mars",
+            "description": "In Terraforming Mars, you play a corporation and work together in the terraforming process, but compete for getting victory points. Victory Points are awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar system, and doing other commendable things.",
+            "creator": "Indie brands",
+            "year_released": "2016-09-28",
+            "number_of_players": 4,
+            "duration": 60,
+            "age_rec": 12,
+            "categories": [1],
+            "user_id": 1
+        }
+    }
+]
