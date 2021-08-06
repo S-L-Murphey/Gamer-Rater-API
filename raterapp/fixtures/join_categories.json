@@ -1,0 +1,18 @@
+[
+    {
+        "model": "raterapp.joincategory",
+        "pk": 1,
+        "fields": {
+            "game_id": 1,
+            "category_id": 1
+        }
+    },
+    {
+        "model": "raterapp.joincategory",
+        "pk": 2,
+        "fields": {
+            "game_id": 2,
+            "category_id": 2
+        }
+    }
+]
