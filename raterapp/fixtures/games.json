@@ -11,7 +11,7 @@
             "duration": 120,
             "age_rec": 14,
             "categories": [1],
-            "user_id": 1
+            "player": 1
         }
     },
     {
@@ -20,13 +20,13 @@
         "fields": {
             "title": "Terraforming Mars",
             "description": "In Terraforming Mars, you play a corporation and work together in the terraforming process, but compete for getting victory points. Victory Points are awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar system, and doing other commendable things.",
-            "creator": "Indie brands",
+            "creator": "Indie Brands",
             "year_released": "2016-09-28",
             "number_of_players": 4,
             "duration": 60,
             "age_rec": 12,
             "categories": [1],
-            "user_id": 1
+            "player": 1
         }
     }
 ]

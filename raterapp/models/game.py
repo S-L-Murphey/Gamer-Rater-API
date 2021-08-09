@@ -7,7 +7,7 @@ class Game(models.Model):
     """
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=150)
-    user_id = models.ForeignKey("User", on_delete=models.CASCADE)
+    player = models.ForeignKey("Player", on_delete=models.CASCADE)
     year_released = DateField()
     number_of_players = models.IntegerField()
     duration = models.IntegerField()

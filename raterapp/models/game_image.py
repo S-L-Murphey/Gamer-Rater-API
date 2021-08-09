@@ -5,4 +5,4 @@ class GameImage(models.Model):
     """
     image = models.ImageField()
     game = models.ForeignKey("Game", on_delete=models.CASCADE)
-    user = models.ForeignKey("User", on_delete=models.CASCADE)
+    player = models.ForeignKey("Player", on_delete=models.CASCADE)

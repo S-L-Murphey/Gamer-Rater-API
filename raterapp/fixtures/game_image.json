@@ -5,7 +5,7 @@
         "fields": {
             "image": "https://m.media-amazon.com/images/I/918TkODhXPL._AC_SL1500_.jpg",
             "game_id": 1,
-            "user_id": 1
+            "player_id": 1
         }
     },
     {
@@ -14,7 +14,7 @@
         "fields": {
             "image": "https://m.media-amazon.com/images/I/91RdR7olLsL._AC_SL1500_.jpg",
             "game_id": 2,
-            "user_id": 1
+            "player_id": 1
         }
     }
 ]
