@@ -3,5 +3,13 @@
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
         "--django-settings-module=gamerrater.settings",
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "RaterApp",
+            "database": "db.sqlite3"
+        }
     ]
 }
