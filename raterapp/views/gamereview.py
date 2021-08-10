@@ -6,7 +6,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from raterapp.models import Review
+from raterapp.models import Review, Player, Game
 
 class ReviewView(ViewSet):
     """GamerRater reviews"""
@@ -28,6 +28,39 @@ class ReviewView(ViewSet):
             return Response(serializer.data)
         except Exception as ex:
             return HttpResponseServerError(ex)
+
+    def create(self, request):
+        """Handle POST operations
+
+        Returns:
+            Response -- JSON serialized game instance
+        """
+
+        # Uses the token passed in the `Authorization` header
+        player = Player.objects.get(user=request.auth.user)
+        game = Game.objects.get(pk=request.data["game"])
+       
+
+        # Create a new Python instance of the Game class
+        # and set its properties from what was sent in the
+        # body of the request from the client.
+        review = Review()
+        review.review = request.data["review"]
+        review.rating = request.data["rating"]
+        review.game = game
+        review.player = player
+        
+        
+        try:
+            review.save()
+            serializer = ReviewSerializer(review, context={'request': request})
+            return Response(serializer.data)
+
+        # If anything went wrong, catch the exception and
+        # send a response with a 400 status code to tell the
+        # client that something was wrong with its request data
+        except ValidationError as ex:
+            return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
 
     def list(self, request):
         """Handle GET requests to games resource
