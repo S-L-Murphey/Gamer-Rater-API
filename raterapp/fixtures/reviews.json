@@ -15,7 +15,7 @@
         "pk": 2,
         "fields": {
             "review": "With the expansion pack, choose from 7 different factions, and 7 different game boards to set forth on your quest of glory! Boost your defenses, conquer your surrounding land, and take no prisoners from your enemies!",
-            "game_id": 2,
+            "game_id": 1,
             "player_id": 1,
             "rating": 5
         }
